@@ -1,28 +1,28 @@
-// Get main view 
-// main contnet UI 
+// main UI contnet 
 const contentUI = document.querySelector('.list-content');
 const listUI = document.querySelector('.list');
 
 
 function createItems(list) {
+    // temporary element 
+    const fragment = document.createDocumentFragment();
     for (let i = 0; i <= 8; i++) {
-        const li = document.createElement('li');
+        let li = document.createElement('li');
         li.className = 'item';
-        list.appendChild(li);
+        fragment.appendChild(li);
     }
-
+    list.appendChild(fragment);
 }
 
 
-// unordered list listener 
+// delegation event
 listUI.addEventListener('click', (e) => {
-    // check before execut this event 
-    if (!e.target.matches('li')) return
+    // check before execut . 
+    if (!e.target.matches('li')) return;
     // To avoid to change background color that already has. 
     if(e.target.classList.contains('added')) return ;
     changeColor(e.target);
 });
-
 
 
 

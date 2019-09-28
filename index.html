@@ -9,36 +9,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- Materail Toast message -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dmuy/Material-Toast/mdtoast.css">
+    <script src="https://cdn.jsdelivr.net/gh/dmuy/Material-Toast/mdtoast.js"></script>
     <title>Dom activity</title>
 
 </head>
 
 <body>
     <!-- Main content -->
-    <div class="container-fluid">
+    <main class="container-fluid">
         <!-- Main section info -->
-        <div class="jumbotron bg-color jumbotron-fluid ">
+        <header class="jumbotron bg-color jumbotron-fluid ">
             <h1 class="text-center text-white"> Create DOM element</h1>
-        </div>
+        </header>
 
         <!-- unordered list  -->
         <section class="list-content">
-            <ul class="list">
-                <!-- Todo :: remove this items and creating with JS  -->
-                <!-- <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li>
-                <li class="item"></li> -->
+            <!-- <section>Timer gose here </section> -->
+            <ul class="list"  id="list" tabindex="0">
             </ul>
         </section>
 
-    </div>
 
+    </main>
+
+        <div class="toast" role="alert" aria-live="polite" aria-atomic="true" data-delay="10000">
+            <div role="alert" aria-live="assertive" aria-atomic="true">...</div>
+        </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -50,6 +48,7 @@
         crossorigin="anonymous"></script>
 
     <script src="app.js"></script>
+    <script src="proto_vs_prototype.js"></script>
 </body>
 
 </html>
